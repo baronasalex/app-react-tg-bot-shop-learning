@@ -1,6 +1,8 @@
 import './App.css';
 import {useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
+import Header from "./components/Header/Header";
+import './components/Header/Header.css'
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
 
 
   return ( 
-    <div className='App'> 
+    <div className='App'>
+        <Header />
       <button onClick={onToggleButton}>toggle</button>
     </div>
    );
